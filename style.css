@@ -18,12 +18,16 @@ nav {
 background-color:blue;
 color: white;
 grid-area: nav;
+padding: 10px;
+margin: 0px;
 }
 
 main {
     background-color: white;
     color: black;
     grid-area: main;
+    padding: 250px;
+    margin: 0px;
 }
 
 aside {
@@ -35,6 +39,8 @@ footer {
     background-color: black;
     color: white;
     grid-area: footer;
+    padding: 20px;
+    margin: 0px;
 }
 
 body {
@@ -53,6 +59,6 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    
+   
 
     }
