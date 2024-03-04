@@ -7,11 +7,11 @@ body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav" 
-    "main main aside"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
 }
 
 header {
@@ -22,11 +22,11 @@ header {
 }
 
 nav {
-background-color:blue;
-color: white;
-grid-area: nav;
-padding: 10px;
-margin: 0px;
+    background-color: blue;
+    color: white;
+    grid-area: nav;
+    padding: 10px;
+    margin: 0px;
 }
 
 nav ul {
@@ -34,7 +34,7 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    }
+}
 
 
 main {
@@ -45,21 +45,35 @@ main {
     margin: 0px;
 }
 
-aside {
-    background-color: gray;
-    grid-area: aside;
+/* form formatting*/
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    row-gap: 0.5em;
+    width: 400px;
+    border: 2px;
+    background-color: black;
+    color: white;
+    
 }
 
-@media only screen and (max width: 75 ) {
-    body{
+input[type="submit"] {
+    grid-column: 2;
+}
+
+
+@media only screen and (max-width: 800px) {
+    body {
         padding: 0.5%;
     }
 }
- 
-@media only screen and (max width: 80 ){
-    body{
-        padding: 0.5%;    
-}
+
+@media only screen and (min-width: 800px) {
+    body {
+        padding: 0.5%;
+        margin: 0px;
+    }
 }
 
 
