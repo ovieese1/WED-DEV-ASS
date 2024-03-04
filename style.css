@@ -50,6 +50,19 @@ aside {
     grid-area: aside;
 }
 
+@media only screen and (max width: 75 ) {
+    body{
+        padding: 0.5%;
+    }
+}
+ 
+@media only screen and (max width: 80 ){
+    body{
+        padding: 0.5%;    
+}
+}
+
+
 footer {
     background-color: black;
     color: white;
@@ -57,4 +70,3 @@ footer {
     padding: 20px;
     margin: 0px;
 }
-
